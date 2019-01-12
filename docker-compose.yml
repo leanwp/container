@@ -1,0 +1,28 @@
+version: '3'
+services:
+  www:
+    build:
+      context: .
+      args:
+        - DB_HOST=$DB_HOST
+        - DB_NAME=$DB_NAME
+        - DB_USER=$DB_USER
+        - DB_PASSWORD=$DB_PASSWORD
+    image: wowbubble:0.1
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html
+    command: ["/var/www/bin/install"]
+    environment:
+      - DB_HOST
+      - DB_NAME
+      - DB_USER
+      - DB_PASSWORD
+      - WP_VERSION
+      - WP_DEBUG
+      - WP_TITLE
+      - WP_BASE_URL
+      - WP_ADMIN_USER
+      - WP_ADMIN_PASSWORD
+      - WP_ADMIN_EMAIL

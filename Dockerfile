@@ -1,6 +1,6 @@
 FROM php:7.3-apache
 
-LABEL maintainer="Rei Nuttanon"
+LABEL maintainer="Leanwp Team"
 
 ARG DB_HOST
 ARG DB_NAME

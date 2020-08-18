@@ -1,3 +1,5 @@
+🇹🇭 [Thai](https://github.com/leanwp/container/blob/master/README-th.md)
+
 # Leanwp; Container
 
 Leanwp; Container is a WordPress container built based on Docker system.
